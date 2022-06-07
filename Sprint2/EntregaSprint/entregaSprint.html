@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        div {
+            color: black;
+        }
+    </style>
+    <header class="p-3 mb-2 bg-secondary bg-opacity-10 text-black">
+        <h1 class="text-center" >Calculadora Sprint 2</h1>
+    </header>
+    
+    <main>
+        <div class="p-3 mb-2 bg-primary text-white">
+            <h2 class="text-center">App de gastos</h2>
+            <p class="text-center">ingresa cuanto pago cada persona</p>
+        </div>
+        <div>
+            <form>
+                <input type="text" id="nombreUsuario" class="d-block p-2 .bg-white text-black" placeHolder="Nombre" />
+                <input type="text" id="dineroGastado" class="d-block p-2 .bg-white text-black" placeholder="dinero Gastado" />
+                <input type="button" class="btn btn-danger" onClick="crearUsuario()" value="Enviar" />
+            </form>
+            <div id="listaUsuarios" class="border"></div>
+            <div id="totalGastado" class="border"></div>
+            <div id="totalIndividual" class="border"></div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="entregaSprint.js"></script>
+</body>
+
+</html>
